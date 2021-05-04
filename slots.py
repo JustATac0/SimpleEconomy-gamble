@@ -56,4 +56,4 @@ async def slots(ctx, amount:int):                                               
             await ctx.send(embed=embed)
             return
             
-client.run(TOKEN)            
+client.run(TOKEN) 
