@@ -14,7 +14,7 @@ seco = Seco(client,"your_api_token","your_project_name_lowercase")              
 async def slots(ctx, amount:int):                                                                                     # Function name is 'slots'
     balance=await seco.get_balance(ctx.author.id)                                                                     # Get message author's balance from online DB
     double = amount * 2                                                                                               # Amount of earnings to showcase from doubling
-    quadwin = amount *3                                                                                               # Amount of earnings to add from quadrupling
+    quadwin = amount * 3                                                                                               # Amount of earnings to add from quadrupling
     quad = amount * 4                                                                                                 # Amount of earnings to showcase from quadrupling
     if amount <= 0:                                                                                                   # You cannot gamble any amount lower than 1
         return await ctx.send("You can't gamble with less than **1** monie!")
