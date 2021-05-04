@@ -4,3 +4,4 @@ A simple slot machine using SimpleEconomy for Discord.py. Made as a reference fo
 ### This bot does require:
       -discord.py (obviously)
       -SimpleEconomy
+ 
