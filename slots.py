@@ -12,7 +12,7 @@ seco = Seco(client,"your_api_token","your_project_name_lowercase")              
 
 @client.command()
 async def slots(ctx, amount:int):                                                                                     # Function name is 'slots'
-    balance=await seco.get_balance(ctx.author.id)                                                                     # Get message author's balance from online DB
+    balance = await seco.get_balance(ctx.author.id)                                                                     # Get message author's balance from online DB
     double = amount * 2                                                                                               # Amount of earnings to showcase from doubling
     quadwin = amount * 3                                                                                               # Amount of earnings to add from quadrupling
     quad = amount * 4                                                                                                 # Amount of earnings to showcase from quadrupling
