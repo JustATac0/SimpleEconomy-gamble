@@ -20,7 +20,7 @@ async def slots(ctx, amount:int):                                               
         return await ctx.send("You can't gamble with less than **1** monie!")
     if balance == 0:                                                                                                  # You cannot gamble if you have no monies
         return await ctx.send("You can't gamble with less than **1** monie!")
-    if balance < amount:                                                                                             # You cannot gamble over your balance
+    if balance < amount:                                                                                              # You cannot gamble over your balance
         await ctx.send("Oops, looks like you don't have enough monies to gamble this amount!") 
     else:
         choice=random.randint(1,100)                                                                                  # Random number from 1 to 100
